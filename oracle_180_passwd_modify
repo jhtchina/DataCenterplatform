@@ -1,0 +1,10 @@
+1.sqlplus / as sysdba (sys网络管理员用户登录) ；
+2. 执行：SELECT * FROM dba_profiles WHERE profile='DEFAULT' AND resource_name='PASSWORD_LIFE_TIME';                    检查密码的有效期是否为默认的180天
+
+3. ALTER PROFILE DEFAULT LIMIT PASSWORD_LIFE_TIME UNLIMITED;                                                                                      将密码有效期由默认的180天修改成“无限制”
+
+4. 再次执行：SELECT * FROM dba_profiles WHERE profile='DEFAULT' AND resource_name='PASSWORD_LIFE_TIME';             检查密码的有效期是否为“无限制”
+
+5. 如果还是连不上，就重新修改一下用户密码：
+
+ALTER USER 用户名 IDENTIFIED BY 密码 ;

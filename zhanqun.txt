@@ -1,0 +1,9 @@
+/opt/vsb9mfp/nginx_new/sbin/nginx -t 	检测语法
+提示以下内容，说明语法正确
+nginx: the configuration file /opt/vsb9mfp/nginx_new/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/vsb9mfp/nginx_new/conf/nginx.conf test is successful
+
+
+/opt/vsb9mfp/nginx_new/sbin/nginx	启动
+	
+/opt/vsb9mfp/nginx_new/sbin/nginx -s stop	停止
